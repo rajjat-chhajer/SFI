@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#EFEFEF
+}
+#outer-border{
+    top: 0px;
+    margin:20px;
+    background-color: white;
+    border-color:black;
+    border-style: ridge;
+    /*border-right-style: ridge;
+    border-left-style: ridge;  */
+    border-width: 1px;
+    border-radius: 5px;
+     
+}
+
+#menu{
+    top:10;
+    position:relative;
+    background-color: #C3BCA9;
+    height:30px;
+}
+
+
+.background-top {
+    margin: 8px ;
+    min-height:600px;
+    padding-top: 10 px;
+    padding-bottom:10 px;   
+    /*background-color:#E3DFD4;*/
+    background-color: white;
+    border-color: white;
+    border: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+
+}
+
+.background-main {
+    margin:0;
+    min-height:130;
+    background-color:#E3DFD4;
+    border: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}
+
+#background-white {
+    position: relative;
+    background-color: white;
+    margin:0;
+}
+
+
+#login-info {
+    margin:5px;
+    float:right;
+    color:black;
+    position: relative;  
+}
+
+
+#logo {
+    height: 120px;
+    width: 120 px;
+
+}
+#grad1 {
+    height: 10px;
+    background-image: -webkit-gradient(linear, right, right, from(#DD492F), to(e#E3DFD4));
+    background-image: -webkit-linear-gradient(right, #DD492F, #E3DFD4);
+    background-image: -moz-linear-gradient(right, #DD492F, #E3DFD4);
+    background-image: linear-gradient(to right, #DD492F, #E3DFD4);
+
+}
+
+#link {
+    color:black;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+#menu-item {
+    position:relative;
+    top:5px;
+    left:5px;
+    color:black;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+#notification {
+    position: absolute;
+    height:50px;
+    width: 35px;
+    top: 160px;
+    left: 1280px;
+}
+
+.right{
+    bottom: 5px;
+    min-height: 410px;
+    width: 280px;
+    margin:8px;
+    border-style: outset; 
+    float: right;
+    position: relative;
+    background-color:  #E3DFD6;
+   /* top:200px;
+    left: 1120px;
+    padding: 10px;*/
+
+}
+
+#small-right{
+    position:relative;
+    top:8px;
+    border-style:inset;
+    height:370px;
+    width:265px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #DDDDDD;
+    overflow: auto;
+
+}
+
+#user-face{
+    height: 180px;
+    width: 180px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    z-index: 1;
+    
+    /*padding: 10px;*/
+
+}
+.txt {
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold ;
+    font-family: 'Times New Roman', Times, serif;
+}

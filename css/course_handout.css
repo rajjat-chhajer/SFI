@@ -1,0 +1,111 @@
+
+.course_titles{
+    position: relative;
+    top: 1em;
+    background: gray;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.handout_wrapper{
+    position: relative;
+    top: 5em;
+}
+
+.course_code{
+    margin-top: 0.2em;
+    width: 10em;
+    float: left;
+    font-size: 2.3em;
+}
+
+.course_title{
+    font-size: 3em;
+    display: inline;
+}
+
+.sem_session_no{
+    width: 12em;
+    float: right;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.topic_input{
+    margin-top: 4.8em;   
+    float: left;
+    margin-right: 2em;
+}
+
+.topic_title { 
+    font-size: 2.5em;
+    font-weight: lighter;
+    width: 37em;
+    float: left;
+}
+
+.rating {
+   /* margin: 1.5em 0em .5em 1em; */
+    margin: 1.5em -6em .5em -10em;
+}
+
+.drop_down_button{
+    position: relative;
+    top: 3.3em;
+    left: 15em;
+    cursor: pointer;
+}
+
+.greyed_drop_down_button{
+    position: relative;
+    top: 3.3em;
+    left: 15em;
+    cursor: pointer;
+}
+
+.links {
+    margin-left: 1em;
+    font-size : 1.2em;
+    display: inline-block;  
+    margin-right: 1.2em;
+}
+
+.topic_wrapper{
+    background: blue;
+    margin-bottom: .5em;
+}
+
+.subtopic_input{
+    float: left;
+    margin-top: 4em;
+    margin-right: 2em;
+}
+
+.subtopic_title{
+    font-size: 2em;
+    width : 37em;
+    float: left;
+    font-weight: lighter;
+    margin-top: 1.6em;
+}
+
+.subtopic_rating {
+    position: relative;
+    margin: 1.5em 0em 2em 12em;
+}
+
+.frequency{
+    position: relative;
+    bottom: 6em;
+    left: 30em;
+    display: block;
+}
+
+.subtopic_wrapper{
+    background: green;
+}
+
+.subtopics{
+    display: none; 
+    margin-bottom: 1em;
+}
