@@ -3,6 +3,7 @@
         <title> Moodle </title>
         <link rel="stylesheet" href="moodlestyle.css">
         <link rel="stylesheet" href="hod_css.css">
+        <link rel="Stylesheet" href="modal.css">
     </head>
     
     <body>
@@ -14,8 +15,69 @@
                     </div>
 
                     <div id=grad1 />
-                        <div id=menu><a href=# id=menu-item> Home </a> |<a href=# id=menu-item> Back</a></div>
-                        <img src="assets\notifications.svg" id="notification" >
+                        
+                        <div id=menu> 
+                            <a href=# id=menu-item style="padding:5px;" > Home </a> | <a href=# id=menu-item style="padding:5px;"  > Back</a> | <a href=# id=myBtn style="position:relative; top:5px; left:5px; color:black; font-size: 18px; text-decoration: none; padding:5px;"  >Request meeting</a>
+                            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close"> &#9747; </span>
+                    <h2>Message</h2>
+                    </div>
+                    <div class="modal-body">
+                        <br>
+                        <lable><b>TO:</b></lable> <input type="text" name="receiver" placeholder="Username" id=shorttxt style="width:60%"><br>
+                        <br>
+                        <lable><b>Subject:</b></lable> <input type="text" name="Subject" PLACEHOLDER="Subject of your message" id= shorttxt style="width:60%"><br>
+                        <br>
+                        <lable><b >Message:</b></label> <textarea rows=6 cols=80 name="message" placeholder="Your message" wrap=soft id=bigtxt ></textarea><br>
+                        <br>
+                        <input type="submit" value="Send Request" id=sendmessage >    
+                    </div>
+                </div>
+
+                </div>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        var btn1 = document.getElementById("sendmessage");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        btn1.onclick = function() {
+            modal.style.display = "none";
+            alert("Request sent");
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+                            <img src="assets\notification.png" style="position:relative; width:30px;height:30px; float:right;">
+                            
+                        
+                    </div>
+                        
                         
                             <div id=background-white>   
                                 <div class=right>
@@ -37,62 +99,61 @@
                                 </div>
 
                                 <nav>
-    <ul>
-        <div class="dropdown">
-        <button class="dropbtn">Algorithms</button>
-        <div class="dropdown-content">
-            <a href="#">faculty incharge</a>
-            <a href="#">view course handout</a>
-            <a href="#">view feedback</a>
-            <a href="#">research and specialisation</a>
-        </div>
-        </div>
-        
-        <div class="dropdown">
-        <button class="dropbtn">Web Mining</button>
-        <div class="dropdown-content">
-            <a href="#">faculty incharge</a>
-            <a href="#">view course handout</a>
-            <a href="#">view feedback</a>
-            <a href="#">research and specialisation</a>
-        </div>
-        </div>
-    
-        <div class="dropdown">
-        <button class="dropbtn">Data Mining</button>
-        <div class="dropdown-content">
-            <a href="#">faculty incharge</a>
-            <a href="#">view course handout</a>
-            <a href="#">view feedback</a>
-            <a href="#">research and specialisation</a>
-        </div>
-        </div>
+                                        <ul>
+                                            
+                                            <div class="dropdown">
+                                            <button class="dropbtn">Algorithms</button>
+                                            <div class="dropdown-content">
+                                                <a href="#">faculty incharge</a>
+                                                <a href="#">view course handout</a>
+                                                <a href="#">view feedback</a>
+                                                <a href="#">research and specialisation</a>
+                                            </div>
+                                            </div>
+                                            
+                                            <div class="dropdown">
+                                            <button class="dropbtn">Web Mining</button>
+                                            <div class="dropdown-content">
+                                                <a href="#">faculty incharge</a>
+                                                <a href="#">view course handout</a>
+                                                <a href="#">view feedback</a>
+                                                <a href="#">research and specialisation</a>
+                                            </div>
+                                            </div>
+                                        
+                                            <div class="dropdown">
+                                            <button class="dropbtn">Data Mining</button>
+                                            <div class="dropdown-content">
+                                                <a href="#">faculty incharge</a>
+                                                <a href="#">view course handout</a>
+                                                <a href="#">view feedback</a>
+                                                <a href="#">research and specialisation</a>
+                                            </div>
+                                            </div>
 
-        <div class="dropdown">
-        <button class="dropbtn">Data Mining</button>
-        <div class="dropdown-content">
-            <a href="#">faculty incharge</a>
-            <a href="#">view course handout</a>
-            <a href="#">view feedback</a>
-            <a href="#">research and specialisation</a>
-        </div>
-        </div>
-        
-        <div class="dropdown">
-        <button class="dropbtn">Data Mining</button>
-        <div class="dropdown-content">
-            <a href="#">faculty incharge</a>
-            <a href="#">view course handout</a>
-            <a href="#">view feedback</a>
-            <a href="#">research and specialisation</a>
-        </div>
-        </div>
+                                            <div class="dropdown">
+                                            <button class="dropbtn">Data Mining</button>
+                                            <div class="dropdown-content">
+                                                <a href="#">faculty incharge</a>
+                                                <a href="#">view course handout</a>
+                                                <a href="#">view feedback</a>
+                                                <a href="#">research and specialisation</a>
+                                            </div>
+                                            </div>
+                                            
+                                            <div class="dropdown">
+                                            <button class="dropbtn">Data Mining</button>
+                                            <div class="dropdown-content">
+                                                <a href="#">faculty incharge</a>
+                                                <a href="#">view course handout</a>
+                                                <a href="#">view feedback</a>
+                                                <a href="#">research and specialisation</a>
+                                            </div>
+                                            </div>
 
-    </ul>
-</nav>
-
-
-                            </div>
+                                        </ul>
+                                    </nav>
+                        </div>
                 </div>
         </div>
         
