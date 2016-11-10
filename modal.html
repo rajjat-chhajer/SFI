@@ -115,16 +115,16 @@ input {
                     <span class="close">×</span>
                     <h2>Message</h2>
                     </div>
-                    <div class="modal-body">
+                    <form class="modal-body" name="myForm" action="" onsubmit="return validateForm()" method="GET">
                         <br>
-                        <lable><b>TO:</b></lable> <input type="text" name="receiver" placeholder="Username" id=shorttxt><br>
+                        <lable><b>TO:</b></lable> <input type="text" name="receiver" placeholder="Username" value="" id=shorttxt><br>
                         <br>
                         <lable><b>Subject:</b></lable> <input type="text" name="Subject" PLACEHOLDER="Subject of your message" id= shorttxt><br>
                         <br>
-                        <lable><b>Message:</b></label> <textarea rows=6 cols=90 name="message" placeholder="Your message" wrap=soft id=bigtxt> </textarea><br>
+                        <lable><b>Message:</b></label> <textarea rows=6 cols=90 name="message" placeholder="Your message" wrap=soft id=bigtxt></textarea><br>
                         <br>
                         <input type="submit" value="Send Request" id=sendmessage >    
-                    </div>
+                    </form>
                 </div>
 
                 </div>
@@ -135,7 +135,6 @@ input {
 
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
-        var btn1 = document.getElementById("sendmessage");
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -145,9 +144,34 @@ input {
             modal.style.display = "block";
         }
 
-        btn1.onclick = function() {
-            modal.style.display = "none";
-            alert("Request sent");
+
+        function validateForm() {
+            var x = document.forms["myForm"]["receiver"].value;
+            var y = document.forms["myForm"]["Subject"].value;
+            var z = document.forms["myForm"]["message"].value;
+
+            if (x == null || x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            else 
+		        if (y == null || y == "") {
+                	alert("subject must be filled out");
+                	return false;
+                }
+
+                else
+                        if (z == null || z == "") {
+                            alert("message must be filled out");
+                            return false;
+                        }
+
+                        else {
+                            modal.style.display = "none";
+                            alert("Request sent");
+                        }
+
         }
 
         // When the user clicks on <span> (x), close the modal
