@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="moodlestyle.css">
         <link rel="stylesheet" href="hod_css.css">
         <link rel="Stylesheet" href="modal.css">
+        <link rel="stylesheet" href="notification.css">
     </head>
     
     <body>
@@ -40,10 +41,20 @@
 
                 </div>
 
+        <script src="notification.js">
+        </script>
+
+        
         <script src="modal.js">
         </script>
-                            <img src="assets\notification.png" style="position:relative; width:30px;height:30px; float:right;">
-                            
+                            <div class="dropnotificationdown">
+                                <img src="assets/notification.png" onclick="shownotificationFunction()" class="dropnotification">
+                                <div id="mydropnotificationdown" class="dropnotificationdown-content">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                            </div>
                         
                     </div>
                         

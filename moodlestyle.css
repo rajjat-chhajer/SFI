@@ -115,6 +115,7 @@ body {
    /* top:200px;
     left: 1120px;
     padding: 10px;*/
+    z-index:auto;
 
 }
 
@@ -128,6 +129,7 @@ body {
     margin-right: 5px;
     background-color: #DDDDDD;
     overflow: auto;
+    z-index:auto;
 
 }
 

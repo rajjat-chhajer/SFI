@@ -1,0 +1,43 @@
+.dropnotification {
+    background-color: #C3BCA9;
+    color: white;
+    padding: 0.1px;
+    border: none;
+    cursor: pointer;
+    position:relative; 
+    width:30px;
+    height:30px;
+}
+
+.dropnotification:hover, .dropnotification:focus {
+    background-color: #BF242A;
+}
+
+.dropnotificationdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropnotificationdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index:1;
+}
+
+.dropnotificationdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropnotificationdown a:hover {background-color: #BF242A;color: white;}
+
+.shownotification {display:block;}

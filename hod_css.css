@@ -48,6 +48,7 @@ html{
     font-size: 16px;
     border-bottom: 1px solid #555;
     cursor: pointer;
+    z-index:-1;
 }
 
 
@@ -58,12 +59,14 @@ html{
     padding: 16px;
     font-size: 16px;
     border-bottom: 1px solid #555;
+    z-index: -1;
     cursor: pointer;
 }
 
 .dropdown {
     position: relative;
     display: inline-block; 
+    
     /*inline-block*/
     
 }
@@ -76,7 +79,7 @@ html{
     width: 10px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    
+    z-index:1;
     
     
 }
