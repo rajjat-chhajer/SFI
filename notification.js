@@ -1,4 +1,3 @@
-
 function shownotificationFunction() {
     document.getElementById("mydropnotificationdown").classList.toggle("shownotification");
 }
