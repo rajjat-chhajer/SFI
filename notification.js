@@ -1,5 +1,12 @@
+
+
 function shownotificationFunction() {
-    document.getElementById("mydropnotificationdown").classList.toggle("shownotification");
+    document.getElementById("mydropnotificationdown").classList.toggle("shownotification");   
+}
+
+function notificationOccures()
+{
+    document.getElementById("yolo").style.backgroundColor = "#3b5998";
 }
 
 // Close the dropnotificationdown if the user clicks outside of it
@@ -16,3 +23,4 @@ window.onclick = function(event) {
     }
   }
 }
+

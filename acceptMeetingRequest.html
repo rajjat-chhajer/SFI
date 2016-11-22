@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" href="modal.css">
+</head>
+        <body>
+
+                <!-- Trigger/Open The Modal -->
+                <button id="AcceptBtn">REQUEST MEET</button>
+
+                <!-- The Modal -->
+                <div id="acceptMeetingModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Message</h2>
+                    </div>
+                    
+                        <br>
+                        <lable><b>From:</b></lable> <input type="text" name="receiver" value="z" class=shorttxt disabled><br>
+                        <br>
+                        <lable><b>Subject:</b></lable> <input type="text" name="Subject" value="z" class=shorttxt disabled><br>
+                        <br>
+                        <lable><b>Message:</b></label> <textarea rows=6 cols=90 name="message" wrap=soft class=bigtxt disabled>z</textarea><br>
+                        <br>
+                        <button id=acceptMeeting onclick="ActivateDateTime()">Accept</button>
+                        <button id=RejectMeeting>Cancel</button>
+                         <br>
+                         <form class="modal-body" id="form" name="myForm" action="" onsubmit="return validateForm()" method="POST" style="Display:none;">
+                        <lable><b>Date:</b></label><input type="date" name="Date" id=MeetingDate> <br>
+                        <br>
+                        <lable><b>Time:</b></label><input type="datetime" name="Time" id=MeetingTime> <br>
+                        <br>
+                        <input type="submit" value="Send Request" id=sendmessage >    
+                    </form>
+                </div>
+
+                </div>
+<script src="acceptMeetingRequest.js">
+</script>
+
+        </body>
+</html>

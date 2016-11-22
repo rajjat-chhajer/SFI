@@ -1,0 +1,91 @@
+.rating-details-histogram {
+  max-width: 500px;
+  border-collapse: separate;
+  border-spacing: 0 9px;
+  /*
+   * 1. Force cell to take up all of the available space.
+   */
+  /*
+   * 1. Improves font smoothing for light text on dark backgrounds.
+   */
+  /*
+   * This class exists so that removing it will cause the histogram bars to
+   * transition in all nice and pretty-like.
+   */
+  /** Bar colors */
+}
+.rating-details-histogram td {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.rating-details-histogram .histogram-label {
+  padding-right: 12px;
+}
+.rating-details-histogram .histogram-bar {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 2px;
+  text-align: right;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  transform: none;
+  transition: all 0.4s ease-out;
+  transition-property: transform;
+}
+.rating-details-histogram .text-inside {
+  font-smoothing: antialiased;
+  font-weight: bold;
+  margin-right: 9px;
+}
+.rating-details-histogram .text-outside {
+  vertical-align: middle;
+  margin-left: 3px;
+}
+.rating-details-histogram.collapsed .histogram-bar {
+  transform: translate3d(-100%, 0, 0);
+}
+.rating-details-histogram .n-5 .histogram-label {
+  color: #c41000;
+}
+.rating-details-histogram .n-5 .histogram-bar {
+  background-color: #c41000;
+}
+.rating-details-histogram .n-4 .histogram-label {
+  color: #eb4a2f;
+}
+.rating-details-histogram .n-4 .histogram-bar {
+  background-color: #eb4a2f;
+}
+.rating-details-histogram .n-3 .histogram-label {
+  color: #ee8535;
+}
+.rating-details-histogram .n-3 .histogram-bar {
+  background-color: #ee8535;
+}
+.rating-details-histogram .n-2 .histogram-label {
+  color: #e5b643;
+}
+.rating-details-histogram .n-2 .histogram-bar {
+  background-color: #e5b643;
+}
+.rating-details-histogram .n-1 .histogram-label {
+  color: #b87c38;
+}
+.rating-details-histogram .n-1 .histogram-bar {
+  background-color: #b87c38;
+}
+
+body {
+  margin: 40px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+td {
+  padding: 3px;
+}

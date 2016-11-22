@@ -1,0 +1,80 @@
+@mixin histogram-styles($color) {
+  .histogram-label { color: $color; }
+  .histogram-bar   { background-color: $color; }
+}
+
+.rating-details-histogram {
+  max-width: 500px;
+  border-collapse: separate;
+  border-spacing: 0 9px;
+
+  /*
+   * 1. Force cell to take up all of the available space.
+   */
+  td {
+    width: 100%; // 1
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .histogram-label {
+    padding-right: 12px;
+  }
+
+  .histogram-bar {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 2px;
+    text-align: right;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    transform: none;
+    transition: all 0.4s ease-out;
+    transition-property: transform;
+  }
+
+  /*
+   * 1. Improves font smoothing for light text on dark backgrounds.
+   */
+  .text-inside {
+    font-smoothing: antialiased; // 1
+    font-weight: bold;
+    margin-right: 9px;
+  }
+
+  .text-outside {
+    vertical-align: middle;
+    margin-left: 3px;
+  }
+
+  /*
+   * This class exists so that removing it will cause the histogram bars to
+   * transition in all nice and pretty-like.
+   */
+  &.collapsed .histogram-bar {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+
+  /** Bar colors */
+
+  .n-5 { @include histogram-styles(#c41000); }
+  .n-4 { @include histogram-styles(#eb4a2f); }
+  .n-3 { @include histogram-styles(#ee8535); }
+  .n-2 { @include histogram-styles(#e5b643); }
+  .n-1 { @include histogram-styles(#b87c38); }
+}
+
+body {
+  margin: 40px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+td {
+  padding: 3px;
+}
