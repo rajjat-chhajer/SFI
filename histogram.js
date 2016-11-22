@@ -5,15 +5,15 @@ For stackoverflow question: http://stackoverflow.com/questions/17859134/how-do-i
 $(document).ready(function() {
   $('.bar span').hide();
   $('#bar-five').animate({
-     width: '75%'}, 1000);
+     width: '75%'}, 2000);
   $('#bar-four').animate({
-     width: '35%'}, 1000);
+     width: '35%'}, 2000);
   $('#bar-three').animate({
-     width: '20%'}, 1000);
+     width: '20%'}, 2000);
   $('#bar-two').animate({
-     width: '15%'}, 1000);
+     width: '15%'}, 2000);
   $('#bar-one').animate({
-     width: '30%'}, 1000);
+     width: '30%'}, 2000);
   
   setTimeout(function() {
     $('.bar span').fadeIn('slow');

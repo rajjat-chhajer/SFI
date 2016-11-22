@@ -29,6 +29,13 @@ input {
     border-width:2px;
     }
 
+select { 
+    position: relative  ; 
+    left: 60px; 
+    border-style: solid ; 
+    border-color:#AF3937 ; 
+    border-width:2px;
+    }
 .shorttxt {
     width: 350px;
     }

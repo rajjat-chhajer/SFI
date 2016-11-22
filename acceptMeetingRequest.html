@@ -31,7 +31,39 @@
                          <form class="modal-body" id="form" name="myForm" action="" onsubmit="return validateForm()" method="POST" style="Display:none;">
                         <lable><b>Date:</b></label><input type="date" name="Date" id=MeetingDate> <br>
                         <br>
-                        <lable><b>Time:</b></label><input type="datetime" name="Time" id=MeetingTime> <br>
+                        <lable><b>Time:</b></label>
+                                <select name="Hour">
+                                    <option value="hr">hour</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+
+                                <select name="Min">
+                                    <option value="min">min</option>
+                                    <option value="0">0</option>
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="40">40</option>
+                                    <option value="50">50</option>
+                                </select>
+
+                                <select name="am">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+
+                         <br>
                         <br>
                         <input type="submit" value="Send Request" id=sendmessage >    
                     </form>

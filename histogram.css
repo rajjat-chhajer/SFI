@@ -26,26 +26,9 @@ body {
 }
 
 .rating {
-  float: left;
+  float: bottom;
   width: 45%;
-  margin-right: 5%;
   text-align: center;
-}
-
-.rating-num {
-  color: #333333;
-  font-size: 72px;
-  font-weight: 100;
-  line-height: 1em; 
-}
-
-.rating-stars {
-  font-size: 20px;
-  color: #E3E3E3;
-  margin-bottom: .5em;
-}
-.rating-stars .active {
-  color: #737373;
 }
 
 .rating-users {
@@ -54,8 +37,9 @@ body {
 
 .histo {
   float: left;
-  width: 50%;
+  width: 100%;
   font-size: 13px;
+  margin-bottom: 12px;
 }
 
 .histo-star {
