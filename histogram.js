@@ -1,8 +1,9 @@
 /*
 For stackoverflow question: http://stackoverflow.com/questions/17859134/how-do-i-create-rating-histogram-in-jquery-mobile-just-like-rating-bar-in-google#17859134
 */
+var ViewFrequencyBtn = document.getElementById("myBtn");
 
-$(document).ready(function() {
+
   $('.bar span').hide();
   $('#bar-five').animate({
      width: '75%'}, 2000);
@@ -17,6 +18,7 @@ $(document).ready(function() {
   
   setTimeout(function() {
     $('.bar span').fadeIn('slow');
-  }, 1000);
+  }, 2000);
+
+
   
-});
